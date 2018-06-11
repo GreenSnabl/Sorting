@@ -14,7 +14,9 @@
 #include <cstdlib>
 #include "MergeSort.h"
 #include "HeapSort.h"
+#include "QuickSort.h"
 #include <iostream>
+
 
 using namespace std;
 /*
@@ -28,9 +30,9 @@ int main(int argc, char** argv) {
     for (int i = 0; i < 12; ++i)
         arr2[i] = arr[i];
     
-    heapsort(arr2, 12);
-    
+    //heapsort(arr2, 12);
     //mergeSort(arr, 0, 11);
+    quicksort(arr2, 0, 11);
     
     for (int i = 0; i < 12; ++i)
         cout << arr2[i] << endl;
